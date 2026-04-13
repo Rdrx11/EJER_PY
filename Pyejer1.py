@@ -38,11 +38,11 @@
 #     print("incorrecto intentelo de nuevo")
 
 
-ingreso=int(input("hola bienvenido, su ingreso: "))
-edu=int(input("ingrese su edacucacion nacional"))
+ingreso=int(input("hola bienvenido, su ingreso:"))
 print("1.- baico")
 print("2.-medio")
 print("3.-superior")
+edu=int(input("ingrese su edacucacion nacional:"))
 nacionalidad=input("ingres su nacionalidad chile/otra:")
 credito=0
 if ingreso>500000 and ingreso<1000000:
