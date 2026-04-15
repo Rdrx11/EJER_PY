@@ -38,33 +38,42 @@
 #     print("incorrecto intentelo de nuevo")
 
 
-ingreso=int(input("hola bienvenido, su ingreso:"))
-print("1.- baico")
-print("2.-medio")
-print("3.-superior")
-edu=int(input("ingrese su edacucacion nacional:"))
-nacionalidad=input("ingres su nacionalidad chile/otra:")
-credito=0
-if ingreso>500000 and ingreso<1000000:
-    credito=credito+300000
-elif ingreso>1000001 and 1500000:
-    credito=credito+650000
-elif ingreso>1500001:
-    credito=credito+1000000
-else:
-    print("No le da el sueldo")
+# ingreso=int(input("hola bienvenido, su ingreso:"))
+# print("1.- baico")
+# print("2.-medio")
+# print("3.-superior")
+# edu=int(input("ingrese su edacucacion nacional:"))
+# nacionalidad=input("ingres su nacionalidad chile/otra:")
+# credito=0
+# if ingreso>500000 and ingreso<1000000:
+#     credito=credito+300000
+# elif ingreso>1000001 and 1500000:
+#     credito=credito+650000
+# elif ingreso>1500001:
+#     credito=credito+1000000
+# else:
+#     print("No le da el sueldo")
 
-if edu==1:
-    print("")
-elif edu==2:
-    credito=credito*1.3
-elif edu==3:
-    credito=credito*1.5
+# if edu==1:
+#     print("")
+# elif edu==2:
+#     credito=credito*1.3
+# elif edu==3:
+#     credito=credito*1.5
 
 
-if nacionalidad=="chilena":
-    credito=credito+300000
-else:
-    print("no tiene bono de nacionalidad")
+# if nacionalidad=="chilena":
+#     credito=credito+300000
+# else:
+#     print("no tiene bono de nacionalidad")
 
-print("su puntaje de credito es:", credito)
+# print("su puntaje de credito es:", credito)
+
+# print("ingrese 3 numeros")
+# n1=int(input())
+# n2=int(input())
+# n3=int(input())
+
+# if n1>n2 and n1>n3:
+#     print("el mayor", n1, "que nada")
+# elif n2
