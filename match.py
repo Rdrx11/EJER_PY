@@ -79,15 +79,15 @@ def suma():
 def resta():
         n1=int(input("ingrese un numero: "))
         n2=int(input("ingrese un numero: "))
-        print(f"el resltado es: {n1+n2}")
+        print(f"el resltado es: {n1-n2}")
 def multiplicar():
          n1=int(input("ingrese un numero: "))
          n2=int(input("ingrese un numero: "))
-         print(f"el resltado es: {n1+n2}")
+         print(f"el resltado es: {n1*n2}")
 def dividir():
           n1=int(input("ingrese un numero: "))
           n2=int(input("ingrese un numero: "))
-          print(f"el resltado es: {n1+n2}")
+          print(f"el resltado es: {n1/n2}")
 op=0
 while op!=4:
   print ("seleccione un porgrama")
@@ -98,4 +98,18 @@ while op!=4:
   op=int(input())
   match op:
         case 1:
-              print("hola")
+            saludo()
+            suma()
+            adios()
+        case 2:
+              saludo()
+              resta ()
+              adios ()
+        case 3:
+              saludo()
+              multiplicar()
+              adios()
+        case 4:
+              saludo ()
+              dividir ()
+              adios ()
