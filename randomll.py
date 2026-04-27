@@ -50,32 +50,55 @@
 # se deebe mostrar el ganador al final
 # Bonus: mostrar al barras de vida de cada peleador
 
-import random
-import time
-p1=100
-p2=100
-j1=input("ingrese el nombre del peleador: ")
-j2=input("ingrese el nombre del peleador: ")
-turno=random.randint(1,2)
-while p1>0 or p2>0:
-    if turno%2==0:
-        print(f"turno de {j1}")
-        damage=random.randint(7,18)
-        print(f"el {j1} ataca con {damage}")
-        p2-=damage
-        print(f"el hp de {j2} es {p2}")
-        time.sleep(1)
-    else:
-        print(f"turno de {j2}")
-        damage=random.randint(7,18)
-        print(f"el {j2} ataca con {damage}")
-        p1-=damage
-        print(f"el hp de {j1} es {p1}")
-        time.sleep (1)
-    turno+=1
-print(p1," "*p1)
-print(p2," "*p2)
-if p1>p2:
-    print("el ganador es ", p1)
-else:
-    print("el ganador es ", p2)
+# import random
+# import time
+# p1=100
+# p2=100
+# j1=input("ingrese el nombre del peleador: ")
+# j2=input("ingrese el nombre del peleador: ")
+# turno=random.randint(1,2)
+# while p1>0 or p2>0:
+#     if turno%2==0:
+#         print(f"turno de {j1}")
+#         damage=random.randint(7,18)
+#         print(f"el {j1} ataca con {damage}")
+#         p2-=damage
+#         print(f"el hp de {j2} es {p2}")
+#         time.sleep(1)
+#     else:
+#         print(f"turno de {j2}")
+#         damage=random.randint(7,18)
+#         print(f"el {j2} ataca con {damage}")
+#         p1-=damage
+#         print(f"el hp de {j1} es {p1}")
+#         time.sleep (1)
+#     turno+=1
+# print(p1," "*p1)
+# print(p2," "*p2)
+# if p1>p2:
+#     print("el ganador es ", p1)
+# else:
+#     print("el ganador es ", p2)
+
+# adivine el numero
+# Crea un numero random entre 1 y 100
+# pide el usuario que adivine el numero
+# si el usuario pone un numero mayor al generado
+# el numero a adivina es mayor
+# solo hat 5 posibilidades de adivinar
+
+# import random
+# num=random.randint (1, 100)
+# pos=1
+# j1=int(input("adivina el numero: "))
+# while pos<5 and j1!=num:
+#     if j1>num:
+#         print("Te pasaste")
+#     else:
+#         print("el numero a adivinar es mayor")
+#     j1=int(input("adivina el numero: "))
+#     pos+=1
+# if j1==num:
+#     print("has adivinado")
+# else:
+#     ("has perdido")
