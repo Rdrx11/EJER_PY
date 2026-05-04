@@ -123,37 +123,41 @@
 #     print("3.- adulto mayor $490")
 #     print("4.- salir")
 #     op=int(input("seleccione una opcion: "))
-# match op:
-#     case 1:
-#         print("ha seleccionado niño")
-#         cantn=int(input("cuantos niños van a ingresar: "))
-#         while cantn>1 or cantn<10:
-#             print(" cantidad de niños esta fuera de rango, ingrese una cantidad entre 1 y 10")
+#     match op:
+#         case 1:
+#             print("ha seleccionado niño")
 #             cantn=int(input("cuantos niños van a ingresar: "))
-#         cantp+=cantn
-#         total+=290
-#     case 2:
-#         print("ha seleccionado adulto")
-#         canta=int(input("cuantos adultos van a ingresar: "))
-#         while canta>1 or canta<10:
-#             print(" cantidad de adultos esta fuera de rango, ingrese una cantidad entre 1 y 10")
+#             while cantn<1 or cantn>10:
+#                 print(" cantidad de niños esta fuera de rango, ingrese una cantidad entre 1 y 10")
+#                 cantn=int(input("cuantos niños van a ingresar: "))
+#             cantp+=cantn
+#             total+=290
+#         case 2:
+#             print("ha seleccionado adulto")
 #             canta=int(input("cuantos adultos van a ingresar: "))
-#         cantp+=canta
-#         total+=790
-#     case 3:
-#         print("ha seleccionado adulto mayor")
-#         cantam=int(input("cuantos adultos mayores van a ingresar: "))
-#         while cantam>1 or cantam<10:
-#             print(" cantidad de adultos mayores esta fuera de rango, ingrese una cantidad entre 1 y 10")
+#             while canta<1 or canta>10:
+#                 print(" cantidad de adultos esta fuera de rango, ingrese una cantidad entre 1 y 10")
+#                 canta=int(input("cuantos adultos van a ingresar: "))
+#             cantp+=canta
+#             total+=790
+#         case 3:
+#             print("ha seleccionado adulto mayor")
 #             cantam=int(input("cuantos adultos mayores van a ingresar: "))
-#         cantp+=cantam
-#         total+=490
-#     case 4:
-#         print("saliendo...")
-#         print(f"su total a pagar es: ${total}")
-#         print(f"la cantidad de personas es: {cantp}")
-#     case _:
-#         print("opcion invalida")
+#             while cantam<1 or cantam>10:
+#                 print(" cantidad de adultos mayores esta fuera de rango, ingrese una cantidad entre 1 y 10")
+#                 cantam=int(input("cuantos adultos mayores van a ingresar: "))
+#             cantp+=cantam
+#             total+=490
+#         case 4:
+#             print("saliendo...")
+#             print(f"su total a pagar es: ${total}")
+#             print(f"la cantidad de personas es: {cantp}")
+#         case _:
+#             print("opcion invalida")
+# print("que difrute del paseo")
+#recuerda < es mayor a y este > es menor que
+
+
 
 # preguntar el folio de una entrada a un concierto
 # validar que los folios estén entre 7000 y 21000
@@ -163,4 +167,27 @@
 # mostrar el valor a pagar al final
 
 op=0
-epreccio=40000
+eprecio=40000
+while op!=4:
+    print("ingrese el folio de su entrada: ")
+    folio=int(input())
+    while folio<7000 or folio>21000:
+        print("folio invalido, ingrese un folio entre 7000 y 21000")
+        folio=int(input())
+    print("seleccione el tipo de entrada")
+    print("1.- cancha vip")
+    print("2.- cancha general")
+    print("3.- tribuna")
+    print("4.- salir")
+    op=int(input())
+    match op:
+        case 1:
+            print(f"el valor a pagar es: ${eprecio*1.8}")
+        case 2:
+            print(f"el valor a pagar es: ${eprecio*1.4}")
+        case 3:
+            print(f"el valor a pagar es: ${eprecio*1.2}")
+        case 4:
+            print("saliendo...")
+        case _:
+            print("opcion invalida")
