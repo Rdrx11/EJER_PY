@@ -96,18 +96,51 @@
 # print("Bajo cero:", bajocero)
 # print("Normales:", normal)
 # print("Ola de calor:", oladecalor)
-# Pide al usuario un número inicial (ejemplo: 10).
 
+
+# Pide al usuario un número inicial (ejemplo: 10).
 # El programa debe contar hacia atrás desde ese número hasta el 0.
 # Regla especial: Si el número es impar, el programa debe imprimir "¡Ignición parcial!" en lugar del número.
 # Al final (fuera del for), debe imprimir "¡DESPEGUE! ".
 
-cont = int(input("Ingrese el número inicial: "))
+# cont = int(input("Ingrese el número inicial: "))
 
-for i in range(cont, -1, -1):  
-    if i % 2 != 0: 
-        print("¡Ignición parcial!")
-    else:
-        print(i)
+# for i in range(cont, -1, -1):  
+#     if i % 2 != 0: 
+#         print("¡Ignición parcial!")
+#     else:
+#         print(i)
+# print("¡DESPEGUE!")
 
-print("¡DESPEGUE!")
+# pide el peso de la maleta (debe ser entre 1kg y 50kg).
+# Pregunta el tipo de destino: Nacional o Internacional.
+# Calcula el costo:
+# Si es Nacional: $1.000 por kilo.
+# Si es Internacional: $2.000 por kilo.
+# Regla extra: Si la maleta pesa más de 23kg, se cobra un "Sobrecargo" fijo de $15.000 adicional.P
+
+# pesoe=int(input("ingrese el peso de su maleta: "))
+# nacional=1000
+# internacional=2000
+# if pesoe>1 and pesoe<50:
+#     print("¿su destino es nacional o internacional? seleccione una por favor")
+#     print("1.-nacional")
+#     print("2.-internacional")
+#     op=int(input())
+#     match op:
+#         case 1:
+#             if pesoe>23:
+#                 costo=(nacional*pesoe)+ 16000
+#             else:
+#                 costo=nacional*pesoe
+#             print(f"has selecionado nacional su costo es: ${costo}")
+#         case 2:
+#             if pesoe>23:
+#                 costo=(internacional*pesoe)+ 16000
+#             else:
+#                 costo=internacional*pesoe
+#             print(f"has selecionado internacional su costo es: ${costo}")
+#         case _:
+#             print("opcion invalida")
+# else:
+#     print("el peso es incorrecto")
