@@ -166,28 +166,29 @@
 # vip 1.8, general 1.4 y tribuna 1.2
 # mostrar el valor a pagar al final
 
-op=0
-eprecio=40000
-while op!=4:
-    print("ingrese el folio de su entrada: ")
-    folio=int(input())
-    while folio<7000 or folio>21000:
-        print("folio invalido, ingrese un folio entre 7000 y 21000")
-        folio=int(input())
-    print("seleccione el tipo de entrada")
-    print("1.- cancha vip")
-    print("2.- cancha general")
-    print("3.- tribuna")
-    print("4.- salir")
-    op=int(input())
-    match op:
-        case 1:
-            print(f"el valor a pagar es: ${eprecio*1.8}")
-        case 2:
-            print(f"el valor a pagar es: ${eprecio*1.4}")
-        case 3:
-            print(f"el valor a pagar es: ${eprecio*1.2}")
-        case 4:
-            print("saliendo...")
-        case _:
-            print("opcion invalida")
+# op=0
+# eprecio=40000
+# while op!=4:
+#     print("ingrese el folio de su entrada: ")
+#     folio=int(input())
+#     while folio<7000 or folio>21000:
+#         print("folio invalido, ingrese un folio entre 7000 y 21000")
+#         folio=int(input())
+#     print("seleccione el tipo de entrada")
+#     print("1.- cancha vip")
+#     print("2.- cancha general")
+#     print("3.- tribuna")
+#     print("4.- salir")
+#     op=int(input())
+#     match op:
+#         case 1:
+#             print(f"el valor a pagar es: ${eprecio*1.8}")
+#         case 2:
+#             print(f"el valor a pagar es: ${eprecio*1.4}")
+#         case 3:
+#             print(f"el valor a pagar es: ${eprecio*1.2}")
+#         case 4:
+#             print("saliendo...")
+#         case _:
+#             print("opcion invalida")
+#     break
