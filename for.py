@@ -73,8 +73,8 @@
 #muestre la cantidad de alumnos
 #aprovados o no
 
-Alum=int(input("ingrese la cantidad de alumnos: "))
-print ("la cantidad de alumno es: ", Alum)
-prom=0
-for prom in range (Alum):
-    print ("la cantidad de alumno es: ", Alum)
+# Alum=int(input("ingrese la cantidad de alumnos: "))
+# print ("la cantidad de alumno es: ", Alum)
+# prom=0
+# for prom in range (Alum):
+#     print ("la cantidad de alumno es: ", Alum)

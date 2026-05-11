@@ -67,8 +67,20 @@
 #         print("Solo debe ingresar numeros enteros")
 
 
-porc=int(input("ingrese el porcentaje: "))
-if porc>0 and porc<100:
-    print("porcentaje es correcto")
-else:
-    print("porcentaje fuera de rango")
+# porc=int(input("ingrese el porcentaje: "))
+# if porc>0 and porc<100:
+#     print("porcentaje es correcto")
+# else:
+#     print("porcentaje fuera de rango")
+
+# toon1=input("ingrese el toon 1")
+# toon2=input("ingrese el toon 2")
+# v1=0
+# v2=0
+# while True:
+#     try:
+#         cant=int(input("cuantos votantes son? "))
+#         break
+#     except:
+#         print("solo puedes ingresar valores positivos")
+# le falta desarrollo
