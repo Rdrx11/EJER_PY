@@ -102,6 +102,7 @@ while op!=4:
                         print("solo multiplos de $5000")
                 except ValueError as e:
                     print("solo numeros enteros")
+                    print("no puede mas haya de su monto disponible")
         case 3:
             print("cuanto quiere ingresar?")
             deposito=int(input())
