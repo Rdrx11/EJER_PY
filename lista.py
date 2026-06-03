@@ -87,33 +87,33 @@ def actualizar():
         nn_juguete=input("ingrese el nuevo nombre del juguete")
         Jueguete[posicion-1]=nn_juguete
         print("se ha actualizado con exito")
-def juguetes():
-    while True:
-        try:
-            print ("-"*20)
-            print("1.- agregar un juguete")
-            print("2.- eleminar un juguete")
-            print("3.- actualizar juguetes")
-            print("4.- Mostrar jueguetes")
-            print("5.- salir")
-            op=int(input("seleccione una opcion: "))
-            match op:
-                case 1:
-                    agregar()
-                case 2:
-                    ("-"*20)
-                    mostrar()
-                    eleminar()
-                case 3:
-                    print ("-"*20)
-                    mostrar()
-                    actualizar()
-                case 4:
-                    mostrar()
-                case 5:
-                    print("saliendo...")
-                    break
-                case _:
-                    print("opcion invalida")
-        except:
-            print ("oh no hermano")
+
+while True:
+    try:
+        print ("-"*20)
+        print("1.- agregar un juguete")
+        print("2.- eleminar un juguete")
+        print("3.- actualizar juguetes")
+        print("4.- Mostrar jueguetes")
+        print("5.- salir")
+        op=int(input("seleccione una opcion: "))
+        match op:
+            case 1:
+                agregar()
+            case 2:
+                ("-"*20)
+                mostrar()
+                eleminar()
+            case 3:
+                print ("-"*20)
+                mostrar()
+                actualizar()
+            case 4:
+                mostrar()
+            case 5:
+                print("saliendo...")
+                break
+            case _:
+                print("opcion invalida")
+    except:
+        print ("oh no hermano")
