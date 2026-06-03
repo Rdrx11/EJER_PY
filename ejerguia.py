@@ -27,3 +27,4 @@ def calculaProm(notas):
     return sum(notas)/len(notas)
 print ("El promefdio es ", calculaProm(notas), notas)
         
+# crear una funcion que valide un input es un numero
