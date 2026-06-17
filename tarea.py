@@ -62,7 +62,17 @@ def menu():
                 pacientes[pacienteTEMP-1]["grave"]=ValidarEstado(tomarTemp)
                 
             case 4:
-                descuento()
+                # descuento()
+                pa=int(input("que paciente va a pagar?: "))
+                if pacientes[pa-1]["prevision"].lower()=="Fonasa":
+                    pagar=25000*0.46
+                elif pacientes[pa-1]["prevision"].lower()=="Isapre":
+                    pagar=25000*0.73
+                elif pacientes[pa-1]["prevision"].lower()=="Fodesa":
+                    pagar=25000*0.875
+                else:
+                    print("prevision incorrecta")
+                print("Su total a paragar es: ", pagar)
             case 5:
                 print ("salir")
                 break
