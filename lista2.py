@@ -77,7 +77,7 @@ def VegetalesMENU():
             match op:
                 case 1:
                     # agregarVegetales()
-                    agregarProducto
+                    agregarProducto()
                 case 2:
                     # eleminarVegetal()
                     eleminarProducto()

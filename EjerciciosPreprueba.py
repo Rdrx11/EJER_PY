@@ -16,29 +16,50 @@
 
 # usa lista o diccionario segun lo que te acomode mas
 
-import random
-
 Parking={
     1: [],
     2: [],
     3: [],
     4: [],
 }
-TipoVehiculo={
-    1:{"tipo":"ligero", "precio: ": 2000},
-    2:{"tipo": "mediano", "precio": 3000},
-    3:{"tipo": "pesado", "precio": 3500}
-}
-
 def agregarVehiculo():
-    print("")
+    valor=0
+    print("Ingresar vehiculo nuevo")
+    tipo=int(input("Que tipo es?: \n1.-Ligero\n2.-Mediano\n3.-Pesado: "))
+    if tipo==1:
+        valor=2000
+    elif tipo==2:
+        valor=3000
+    elif tipo==3:
+        valor=3500
+    else:
+        print("Vehiculo invalido")
+    piso=int(input("En que piso va?: "))
+    if piso in [1,2,3,4] and valor>0 :
+        if len(Parking[piso])<10:
+            Parking[piso].append(valor)
+            print("Agregado al piso", piso)
+        else:
+            print("Piso lleno")
+    else:
+        print("Piso no válido")
 def mostrarGanancias():
-    print("")
-
-
-
+    totalGanancias=0
+    print("Contando Ganancias")
+    for piso in Parking.values():
+        totalGanancias+=sum(piso)
+    print(f"El total recudado es {totalGanancias}")
+def cuentAutos():
+    totalAutos=0
+    for piso in Parking.values():
+        totalAutos+=len(piso)
+    print("El total de autos en el parking es:", totalAutos)
+def muestrAutos():
+    for h, t in Parking.items():
+        print(h, ".- ", t)
 def menu():
-    while True:
+ 
+   while True:
         print ("----Gestor de Estacionamiento----")
         print ("1.- ingresar vehiculo")
         print ("2.- contar ganancias ")
@@ -48,35 +69,16 @@ def menu():
         op=int(input("ingrese una de las opciones: "))
         match op:
             case 1:
-
-                auto=int(input("Indique tipo de vehiculo: \n1.- ligero\n2.- mediano\n3.-pesado"))
-                piso=int(input("enq ue piso quedara?"))
-                # piso=random.radint(1,4)
-                if len(Parking[piso])<10:
-                    if auto==1:
-                        Parking[piso].append("ligero")(2000)
-                    elif auto==2:
-                        Parking[piso].append("mediano")(3000)
-                    elif auto==3:
-                        Parking[piso].append("pesado")(3500)
-                    else:
-                        print("vehiculo no valido")
-                else:
-                    print("piso lleno")
+                agregarVehiculo()
             case 2:
-                print("Contar ganancias")
-                totalGanancias=0
-                for pesos in Parking.values():
-                    totalGanancias+=sum(pesos)
-                print("el total acumulado actual es", totalGanancias)
+                mostrarGanancias()
             case 3:
-                print("")
+                cuentAutos()
             case 4:
-                print("")
+                muestrAutos()
             case 5:
-                for piso in Parking.items():
-                    print(f"piso {piso} : {espacios}")
-                maximo=10
+                print("saliendo")
+                break
             case _:
                 print("opcion IVALIDA")
-menu()
+menu() 
