@@ -20,8 +20,7 @@ operaciones = {
 def Mostrar_Autos(Diccio):
     for id, auto in Diccio.items():
         print(f"{id}: {auto}")
-    print("-"*30)
-
+    print("-"*30)  
 def mostrarAutosVendidos(Diccio):
     for id, auto in Diccio.items():
         if operaciones[id][1]!="Pendiente":
@@ -134,27 +133,27 @@ def registrar_auto():
         print("❌ Error: El ID está vacío o ya existe en el sistema. Registro abortado.\n")
         return
     Marca=input("ingrese la marca para el nuevo auto: ")
-    if not validar_dato_id(id):
-        print("❌ Error: El ID está vacío o ya existe en el sistema. Registro abortado.\n")
+    if not validar_dato_texto(Marca):
+        print("❌ Error: El marca está vacío o ya existe en el sistema. Registro abortado.\n")
         return
     Modelo=input("ingrese el modelo para el nuevo auto: ")
-    if not validar_dato_id(id):
-        print("❌ Error: El ID está vacío o ya existe en el sistema. Registro abortado.\n")
+    if not validar_dato_texto(Modelo):
+        print("❌ Error: El modelo está vacío o ya existe en el sistema. Registro abortado.\n")
         return
     año=input("Ingrese Año (mayor a 1900): ")
-    if not validar_dato_id(id):
+    if not validar_dato_texto(año):
         print("❌ Error: El ID está vacío o ya existe en el sistema. Registro abortado.\n")
         return
     ranking = input("Ingrese Ranking (1 al 5): ")
-    if not validar_dato_id(id):
+    if not validar_dato_texto(id):
         print("❌ Error: El ID está vacío o ya existe en el sistema. Registro abortado.\n")
         return
     fecha_ingreso = input("Ingrese Fecha de Ingreso (DD-MM-AAAA): ")
-    if not validar_dato_id(id):
+    if not validar_dato_texto(id):
         print("❌ Error: El ID está vacío o ya existe en el sistema. Registro abortado.\n")
         return
     fecha_venta = input("Ingrese Fecha de Venta (o presione Enter para 'Pendiente'): ")
-    if not validar_dato_id(id):
+    if not validar_dato_texto(id):
         print("❌ Error: El ID está vacío o ya existe en el sistema. Registro abortado.\n")
         return
     autos[id]= [Marca, Modelo, int(año), int(ranking)]
